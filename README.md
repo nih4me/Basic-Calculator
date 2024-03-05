@@ -55,7 +55,9 @@ git commit -m 'Done with the add function'
 git push
 ```
 
-#### The `div` method
+### The `div` method
+
+#### Implementation
 
 In `app.py`
 
@@ -81,4 +83,12 @@ def test_div(calculator):
 def test_div_by_zero(calculator):
     with pytest.raises(ValueError):
         calculator.div(10, 0)
+```
+
+#### Commit and Push
+
+```sh
+git add app.py test.py
+git commit -m 'Done with the div function'
+git push
 ```
