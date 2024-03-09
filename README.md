@@ -1,6 +1,6 @@
 # Basic-Calculator
 
-Programming language: `Python`
+Programming language: `Python v3.10`
 
 - `README.md`: For the documentation
 - `requirements.py`: The project dependencies.
