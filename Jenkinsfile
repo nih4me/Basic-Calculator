@@ -11,11 +11,11 @@ pipeline {
     // Your pipeline steps
     stages {
         // Step 1. Clone code from Github using the Git/Github Plugin
-        stage('Clone Project') {
-            steps {
-                git branch: 'main', url: 'https://github.com/nih4me/Basic-Calculator.git'
-            }
-        }
+        // stage('Clone Project') {
+        //     steps {
+        //         git branch: 'main', url: 'https://github.com/nih4me/Basic-Calculator.git'
+        //     }
+        // }
         
         // Step 2. Install dependencies listed in the requirements.txt file
         // Pip is already installed in the the python image 
