@@ -24,8 +24,15 @@ pipeline {
                 sh 'pip install --user -r requirements.txt'
             }
         }
+
+        // Step 3. Code Quality
+        stage('Code Quality') {
+            steps {
+                sh 'python -m flake8 . --count --select E --show-source --statistics'
+            }
+        }
         
-        // Step 3. Run Tests using pytest
+        // Step 4. Run Tests using pytest
         stage('Testing') {
             steps {
                 sh 'python -m pytest test.py'
